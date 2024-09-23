@@ -1,0 +1,216 @@
+/* Navbar general layout */
+.navbar-container {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    margin-bottom: 35px;
+    gap: 6px;
+  }
+  
+  /* Search bar styling */
+  .search-bar {
+    display: flex;
+    flex-direction: row;
+    max-width: 458px;
+    padding: 8px 16px;
+    height: 52px;
+    background-color: #1c1c24;
+    border-radius: 100px;
+  }
+  
+  .search-input {
+    flex: 1;
+    font-family: 'Epilogue', sans-serif;
+    font-size: 14px;
+    color: white;
+    background: transparent;
+    border: none;
+    outline: none;
+   
+  }
+  
+
+  .bg-connect {
+    background-color: #8c6dfd; /* Tailwind's bg-[#8c6dfd] */
+  }
+  .bg-create-campaign {
+    background-color: #1dc071; /* Tailwind's bg-[#1dc071] */
+  }
+
+  .submit-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px; /* mt-[40px] */
+  }
+  
+  /* Additional styling for the submit button can be handled here */
+  .bg-submit {
+    background-color: #1dc071; /* Replace with your desired color */
+  }
+  /* Base styles for the button */
+.custom-button {
+    font-family: 'Epilogue', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    margin-left: 10px;
+    line-height: 26px;
+    color: white;
+    min-height: 52px;
+    padding: 0 16px; /* px-4 corresponds to padding 16px */
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Add additional styles as needed */
+  
+  .search-button {
+    width: 72px;
+    height: 100%;
+    border-radius: 20px;
+    background-color: #4acd8d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .search-icon {
+    width: 15px;
+    height: 15px;
+    object-fit: contain;
+  }
+  
+  /* Navbar actions (buttons and profile) */
+  .navbar-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 16px;
+  }
+  
+  .profile-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background-color: #2c2f32;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .profile-img {
+    width: 60%;
+    height: 60%;
+    object-fit: contain;
+  }
+  
+  .btn-create-campaign {
+    background-color: #1dc071;
+  }
+  
+  .btn-connect {
+    background-color: #8c6dfd;
+  }
+  
+  /* Small screen navigation */
+  .small-screen-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  
+  .small-screen-logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #2c2f32;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .small-logo-img {
+    width: 60%;
+    height: 60%;
+    object-fit: contain;
+  }
+  
+  .menu-icon {
+    width: 34px;
+    height: 34px;
+    object-fit: contain;
+    cursor: pointer;
+  }
+  
+  /* Drawer for small screens */
+  .drawer {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    left: 0;
+    background-color: #1c1c24;
+    z-index: 10;
+    box-shadow: var(--shadow-secondary);
+    padding: 16px;
+    transition: transform 0.7s ease-in-out;
+  }
+  
+  .drawer-open {
+    transform: translateY(0);
+  }
+  
+  .drawer-closed {
+    transform: translateY(-100vh);
+  }
+  
+  .drawer-list {
+    margin-bottom: 16px;
+  }
+  
+  .drawer-item {
+    display: flex;
+    padding: 16px;
+  }
+  
+  .active-item {
+    background-color: #3a3a43;
+  }
+  
+  .drawer-icon {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+  }
+  
+  .icon-active {
+    filter: grayscale(0);
+  }
+  
+  .icon-inactive {
+    filter: grayscale(1);
+  }
+  
+  .drawer-text {
+    margin-left: 20px;
+    font-family: 'Epilogue', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+  }
+  
+  .text-active {
+    color: #1dc071;
+  }
+  
+  .text-inactive {
+    color: #808191;
+  }
+  
+  .drawer-button-container {
+    display: flex;
+    margin: 0 16px;
+  }
+  

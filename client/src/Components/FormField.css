@@ -1,0 +1,75 @@
+/* Container for the form field */
+.form-field {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  /* Full-screen overlay container */
+.loader-container {
+    position: fixed;
+    inset: 0;
+    z-index: 10;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Loader image styling */
+  .loader-image {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+  }
+  
+  /* Loader text styling */
+  .loader-text {
+    margin-top: 20px;
+    font-family: 'Epilogue', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+  }
+  
+  
+  /* Label styling */
+  .form-field-label {
+    font-family: 'Epilogue', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    color: #808191;
+    margin-bottom: 10px;
+  }
+  
+  /* Common styling for both input and textarea */
+  .form-field-input,
+  .form-field-textarea {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    outline: none;
+    border: 1px solid #3a3a43;
+    background-color: transparent;
+    font-family: 'Epilogue', sans-serif;
+    color: white;
+    font-size: 14px;
+    border-radius: 10px;
+    width: 100%;
+    min-width: 300px;
+  }
+  
+  ::placeholder {
+    color: #4b5264;
+  }
+  
+  /* Specific styles for textarea */
+  .form-field-textarea {
+    resize: vertical; /* Allows vertical resizing */
+  }
+  
